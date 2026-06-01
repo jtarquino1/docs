@@ -75,7 +75,7 @@ Right now, if you're a market maker quoting parlays on Kalshi, each trade is tre
 
 ![Isolated collateral posting per parlay](/collateral_minimization.png)
 
-A $12,000 max payout parlay needs $12,000 in the vault, a $8,000 max payout needs another $8,000, and so on. It's simple but wasteful when these positions are **mutually exclusive** (they cannot both come true). The true worst case here is one parlay hitting ($12,000), never both.
+A \$12,000 max payout parlay needs \$12,000 in the vault, a \$8,000 max payout needs another \$8,000, and so on. It's simple but wasteful when these positions are **mutually exclusive** (they cannot both come true). The true worst case here is one parlay hitting (\$12,000), never both.
 
 Totalis evaluates risk at the **portfolio level**, not trade-by-trade. We compute the **true worst-case loss across all possible outcome states**, and only require collateral for that scenario. Scaled up to millions of parlays, this significantly improves capital efficiency for market makers.
 
